@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }}" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="timer-card" aria-live="polite">
+        <p class="timer-label">Pomodoro</p>
+        <h1 id="remaining-time" class="time" data-testid="remaining-time">25:00</h1>
+        <p id="timer-note" class="timer-note">フェーズ1: 固定値表示の更新ループ</p>
+      </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  </body>
+</html>
