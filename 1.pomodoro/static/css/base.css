@@ -1,0 +1,26 @@
+:root {
+  --bg: #f4f4ef;
+  --card: #ffffff;
+  --text: #1c1c1c;
+  --muted: #6a6a60;
+  --accent: #d65d3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: radial-gradient(circle at top, #fff7ea 0%, var(--bg) 45%, #e8e8dc 100%);
+  color: var(--text);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
